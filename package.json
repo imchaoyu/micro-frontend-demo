@@ -11,17 +11,7 @@
     "install:react": "cd src/app-react && yarn",
     "start:react": "cd src/app-react && yarn start",
     "install:vue": "cd src/app-vue && yarn",
-    "start:vue": "cd src/app-vue && yarn serve",
-    "build": "father-build",
-    "release": "np --no-cleanup --yolo --no-publish",
-    "prepublishOnly": "yarn lint && yarn test && yarn build",
-    "lint": "yarn lint:js && yarn lint:prettier",
-    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
-    "lint:fix": "yarn lint:js -- --fix",
-    "lint:prettier": "prettier -c ./src/**/*",
-    "prettier": "prettier --write ./src/**/*",
-    "docs:dev": "dumi dev",
-    "docs:build": "dumi build"
+    "start:vue": "cd src/app-vue && yarn serve"
   },
   "keywords": [
     "qiankun",
@@ -29,18 +19,8 @@
   ],
   "author": "chaoyu",
   "license": "WTFPL",
-  "dependencies": {
-    "@babel/runtime": "^7.10.5"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@umijs/fabric": "^2.0.7",
-    "dumi": "^1.1.0-beta.24",
-    "father-build": "^1.7.0",
-    "husky": "^2.3.0",
-    "lint-staged": "^9.4.2",
-    "np": "^5.0.3",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.2",
-    "rimraf": "^3.0.0"
+    "npm-run-all": "^4.1.5"
   }
 }
