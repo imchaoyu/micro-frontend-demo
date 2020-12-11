@@ -19,4 +19,8 @@ module.exports = {
     project: './tsconfig.json',
     createDefaultProgram: true,
   },
+  globals: {
+    page: true,
+    REACT_APP_ENV: true,
+  },
 };
