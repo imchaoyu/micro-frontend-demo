@@ -18,7 +18,9 @@ export default defineConfig({
   layout: {
     name: 'micro-frontend',
     locale: true,
-    siderWidth: 208,
+    siderWidth: 108,
+    splitMenus: true,
+    SettingDrawer:{},
     ...defaultSettings,
   },
   dynamicImport: {
